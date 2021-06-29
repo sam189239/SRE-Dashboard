@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Honey",
+        "image": "https://n1.sdlcdn.com/imgs/g/0/d/Bucolic-Natural-Products-Honey-500-SDL538621939-1-00c3e.png",
+        "likes": 0
+    },
+    {
+        "id": 2,
+        "title": "Laptop",
+        "image": "https://tse4.mm.bing.net/th?id=OIP.jsJOcnjb4u3he2FpWyalpQHaEK&pid=Api&P=0&w=318&h=180",
+        "likes": 0
+    },
+    {
+        "id": 3,
+        "title": "BT Speaker",
+        "image": "https://tse1.mm.bing.net/th?id=OIP.jT2g8_6zFcrLFAFte07WjgHaE8&pid=Api&P=0&w=288&h=192",
+        "likes": 0
+    },
+    {
+        "id": 4,
+        "title": "Egg",
+        "image": "https://tse1.mm.bing.net/th?id=OIP.nAUTfQyK_zzokN9VYhnj_AAAAA&pid=Api&P=0&w=298&h=173",
+        "likes": 0
+    }
+]
+
+
+
+
+
+
+django_http_requests_total_by_view_transport_method_total
+
+django_http_responses_body_total_bytes_bucket
