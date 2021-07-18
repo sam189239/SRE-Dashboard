@@ -29,5 +29,5 @@ print("Started Consuming")
 
 channel.start_consuming()
 
-channel.close()
+# channel.close()
 

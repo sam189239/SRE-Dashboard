@@ -36,9 +36,3 @@ services:
         ports:
             - 33066:3306
 
-    promethus:
-        image: prom/prometheus
-        volumes: 
-            - ./prometheus/:/etc/prometheus/
-        ports:
-            - 9000:9000

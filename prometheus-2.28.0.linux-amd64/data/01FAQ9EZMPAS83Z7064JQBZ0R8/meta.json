@@ -1,0 +1,17 @@
+{
+	"ulid": "01FAQ9EZMPAS83Z7064JQBZ0R8",
+	"minTime": 1626416000618,
+	"maxTime": 1626422400000,
+	"stats": {
+		"numSamples": 993268,
+		"numSeries": 2874,
+		"numChunks": 4913
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FAQ9EZMPAS83Z7064JQBZ0R8"
+		]
+	},
+	"version": 1
+}

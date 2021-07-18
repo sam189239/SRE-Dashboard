@@ -1,0 +1,5 @@
+groups:
+  - name: example
+    rules:
+    - record: error_time
+      expr: sum((sum(rate(django_http_responses_total_by_status_total{status=~"4.."}[5m]))/sum(rate(django_http_responses_total_by_status_total[5m])) < 0.01 )+1)

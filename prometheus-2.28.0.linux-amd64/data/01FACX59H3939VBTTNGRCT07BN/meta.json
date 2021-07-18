@@ -1,0 +1,17 @@
+{
+	"ulid": "01FACX59H3939VBTTNGRCT07BN",
+	"minTime": 1625896801028,
+	"maxTime": 1625904000000,
+	"stats": {
+		"numSamples": 96763,
+		"numSeries": 416,
+		"numChunks": 832
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FACX59H3939VBTTNGRCT07BN"
+		]
+	},
+	"version": 1
+}

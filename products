@@ -27,9 +27,39 @@
 
 
 
+services:
+  prometheus:
+    image: "prom/prometheus"
+    network_mode: host
+    ports:
+      - "9090:9090"
+    volumes:
+      - /var/www/html/kubernetes/prometheus:/etc/prometheus
+      - data:/prometheus-data
+  grafana:
+    image: "grafana/grafana"
+    depends_on:
+      - prometheus
+    ports:
+      - "1999:3000"
+volumes:
+  data: /prometheus
+
+
 
 
 
 django_http_requests_total_by_view_transport_method_total
 
 django_http_responses_body_total_bytes_bucket
+
+    promethus:
+        image: prom/prometheus
+        volumes: 
+            - ./prometheus/:/etc/prometheus/
+        ports:
+            - 9000:9000
+
+
+
+python3 save.py http://localhost:9090 | gzip > $(date +"%Y_%m_%d_%I_%M_%p")_metrics.gz

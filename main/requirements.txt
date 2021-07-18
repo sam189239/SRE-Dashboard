@@ -8,3 +8,6 @@ requests==2.22.0
 mysqlclient==2.0.3
 pika==1.1.0
 prometheus_flask_exporter
+flask_prometheus_metrics
+opencensus
+opencensus-ext-zipkin

@@ -1,0 +1,17 @@
+{
+	"ulid": "01FAQXA21VEBP53PGNH22S2MFB",
+	"minTime": 1626436801746,
+	"maxTime": 1626444000000,
+	"stats": {
+		"numSamples": 795115,
+		"numSeries": 2857,
+		"numChunks": 7178
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FAQXA21VEBP53PGNH22S2MFB"
+		]
+	},
+	"version": 1
+}

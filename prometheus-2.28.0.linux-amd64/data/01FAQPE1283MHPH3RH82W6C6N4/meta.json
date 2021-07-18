@@ -1,0 +1,17 @@
+{
+	"ulid": "01FAQPE1283MHPH3RH82W6C6N4",
+	"minTime": 1626429601745,
+	"maxTime": 1626436800000,
+	"stats": {
+		"numSamples": 374795,
+		"numSeries": 1701,
+		"numChunks": 3402
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FAQPE1283MHPH3RH82W6C6N4"
+		]
+	},
+	"version": 1
+}
