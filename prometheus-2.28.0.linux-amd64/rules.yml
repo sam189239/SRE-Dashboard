@@ -2,4 +2,8 @@ groups:
   - name: example
     rules:
     - record: error_time
-      expr: sum((sum(rate(django_http_responses_total_by_status_total{status=~"4.."}[5m]))/sum(rate(django_http_responses_total_by_status_total[5m])) < 0.01 )+1)
+      expr: sum((sum(rate(django_http_responses_total_by_status_total{status=~"4.."}[1m]))/sum(rate(django_http_responses_total_by_status_total[1m])) < 0.01 )+1)
+    - record: latency500_time
+      expr: ((sum(rate(django_http_requests_latency_seconds_by_view_method_bucket{le="0.5"}[1h])) / sum(rate(django_http_requests_latency_seconds_by_view_method_count[1h])) * 100) > 90)/(sum(rate(django_http_requests_latency_seconds_by_view_method_bucket{le="0.5"}[1h])) / sum(rate(django_http_requests_latency_seconds_by_view_method_count[1h])) * 100)
+    - record: error_500_time
+      expr: latency500_time and (error_time/error_time)
