@@ -28,11 +28,11 @@ scrape_configs:
     - targets: ['localhost:8000','localhost:8001']
   - job_name: 'aws_monitor'
     static_configs:
-    - targets: ['3.14.126.22:8001','18.220.175.75:8000']
+    - targets: ['18.219.62.135:8001','3.135.223.236:8000']
   - job_name: 'node_exporter'
     static_configs:
-    - targets: ['3.14.126.22:9100','18.220.175.75:9100']
+    - targets: ['18.219.62.135:9100','3.135.223.236:9100']
   - job_name: 'mysqld_exporter'
     static_configs:
-    - targets: ['3.14.126.22:9104','18.220.175.75:9104']
+    - targets: ['18.219.62.135:9104','3.135.223.236:9104']
 
